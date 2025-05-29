@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.font-playfair {
+  font-family: var(--font-playfair);
+}
+
+.footprint-svg {
+  opacity: 0;
+  animation: walk-footprint 1.2s forwards;
+}
+.footprint-svg:nth-child(1) { animation-delay: 0s; }
+.footprint-svg:nth-child(2) { animation-delay: 0.2s; }
+.footprint-svg:nth-child(3) { animation-delay: 0.4s; }
+.footprint-svg:nth-child(4) { animation-delay: 0.6s; }
+.footprint-svg:nth-child(5) { animation-delay: 0.8s; }
+.footprint-svg:nth-child(6) { animation-delay: 1s; }
+.footprint-svg:nth-child(7) { animation-delay: 1.2s; }
+.footprint-svg:nth-child(8) { animation-delay: 1.4s; }
+.footprint-svg:nth-child(9) { animation-delay: 1.6s; }
+.footprint-svg:nth-child(10) { animation-delay: 1.8s; }
+.footprint-svg:nth-child(11) { animation-delay: 2s; }
+.footprint-svg:nth-child(12) { animation-delay: 2.2s; }
+
+@keyframes walk-footprint {
+  from {
+    opacity: 0;
+    transform: scale(0.7) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+} 
