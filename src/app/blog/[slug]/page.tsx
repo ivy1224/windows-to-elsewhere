@@ -59,7 +59,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         )}
 
         {/* 文章內容 */}
-        <div className="prose prose-lg max-w-none" style={{ fontSize: '1rem' }}>
+        <div className="prose prose-lg max-w-none px-4" style={{ fontSize: '1rem' }}>
           {post.content.split('\n\n').map((paragraph, index) => (
             <p key={index} className="mb-6 text-black font-sans">
               {paragraph}

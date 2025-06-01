@@ -6,7 +6,7 @@ export default function About() {
     <div className="min-h-screen bg-white pt-16">
       {/* About Me Section */}
       <section className="py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* 左側：照片與下方內文 */}
             <div className="flex flex-col items-center">
@@ -42,7 +42,7 @@ export default function About() {
       </section>
       {/* 分隔標題區塊 */}
       <section className="pt-1 pb-16">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-6">
           <div className="relative">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-200"></div>
@@ -55,7 +55,7 @@ export default function About() {
       </section>
       {/* 第二區：內文 */}
       <section className="py-16">
-        <div className="max-w-2xl mx-auto px-4">
+        <div className="max-w-2xl mx-auto px-8 sm:px-12">
           <div className="space-y-4 text-black font-sans text-left">
             <p className="text-base">目前正在英國打工度假。</p>
             <p className="text-base">起初，我以為只要夠勇敢，就能換來自由；只要離開舒適圈，就會離夢想更近。但現實沒有腳本：我遇到語言的斷裂、文化的衝突、金錢的壓力，還有深夜裡數不清的自我懷疑。</p>

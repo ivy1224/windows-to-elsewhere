@@ -49,7 +49,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       </head>
       <body className="antialiased">
         <Navbar />
-        <main className="pt-16">
+        <main className="pt-24">
           {children}
         </main>
       </body>

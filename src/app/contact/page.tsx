@@ -53,12 +53,14 @@ export default function ContactLetter() {
   const isFormValid = formData.name.trim() !== '' && formData.email.trim() !== '' && formData.message.trim() !== '';
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white p-6 pt-24">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4 py-6 pt-24 max-w-2xl mx-auto w-full">
       <div className="text-center mb-16">
-        <div className="flex items-center justify-center">
-          <div className="h-[1px] bg-gray-200 w-[400px]"></div>
-          <span className="px-8 text-xl font-playfair text-black">Write from Your Window to Mine</span>
-          <div className="h-[1px] bg-gray-200 w-[400px]"></div>
+        <div className="flex items-center justify-center w-full">
+          <div className="h-[1px] bg-gray-200 w-full max-w-[60px] sm:max-w-[120px]"></div>
+          <span className="px-2 text-base font-playfair text-black text-center whitespace-nowrap">
+            Write from Your Window to Mine
+          </span>
+          <div className="h-[1px] bg-gray-200 w-full max-w-[60px] sm:max-w-[120px]"></div>
         </div>
         <p className="text-sm text-gray-600 text-center max-w-3xl mx-auto mt-8">
         每段旅程都值得一段對話，歡迎寄來屬於你的故事。
@@ -72,7 +74,7 @@ export default function ContactLetter() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -200, opacity: 0 }}
             transition={{ duration: 1 }}
-            className="cursor-pointer relative w-64 h-40 bg-[#ddd2c7] rounded-md shadow-lg flex items-center justify-center"
+            className="cursor-pointer relative w-full max-w-xs h-40 bg-[#ddd2c7] rounded-md shadow-lg flex items-center justify-center"
             onClick={() => setIsOpen(true)}
           >
             <div className="absolute bottom-0 w-0 h-0 border-l-[128px] border-r-[128px] border-b-[80px] border-l-transparent border-r-transparent border-b-[#c7b9a9] rounded-t" />
@@ -108,7 +110,7 @@ export default function ContactLetter() {
               placeholder="姓名 Name"
               className="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#c7b9a9] font-noto"
               required
-            />
+            /> 
             <input
               type="email"
               name="email"
