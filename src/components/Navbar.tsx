@@ -28,7 +28,7 @@ const Navbar = () => {
           Windows to elsewhere
         </Link>
         {/* 桌面選單 */}
-        <div className="hidden md:flex space-x-8 mx-auto">
+        <div className="hidden md:flex space-x-8 pr-2 md:pr-6">
           <Link href="/" className="text-black hover:text-gray-600">首頁</Link>
           <Link href="/about" className="text-black hover:text-gray-600">關於我</Link>
           <Link href="/blog" className="text-black hover:text-gray-600">部落格</Link>

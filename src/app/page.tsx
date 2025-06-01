@@ -35,10 +35,10 @@ export default function Home() {
         </div>
         <div className="relative h-full flex items-center justify-center text-center px-4 z-20">
           <div className="max-w-3xl">
-            <h1 className={`text-4xl md:text-6xl font-playfair font-bold text-white mb-6 transition-all duration-1000 ease-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <h1 className={`whitespace-nowrap text-xl md:text-2xl lg:text-4xl xl:text-6xl font-playfair font-bold text-white mb-6 transition-all duration-1000 ease-out ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               Windows to elsewhere
             </h1>
-            <p className={`text-lg md:text-xl text-white/90 font-sans transition-all duration-1000 ease-out delay-200 ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <p className={`whitespace-nowrap text-base md:text-lg lg:text-xl xl:text-2xl text-white/90 font-sans transition-all duration-1000 ease-out delay-200 ${textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
               這是一場移動中的人生實驗，也是一種人生態度。
             </p>
           </div>
