@@ -2,6 +2,13 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { Playfair_Display } from 'next/font/google';
+
+const playfair = Playfair_Display({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +31,7 @@ const Navbar = () => {
       </button>
       <div className="flex items-center justify-between max-w-7xl mx-auto px-4 h-24 z-0 relative">
         {/* Logo */}
-        <Link href="/" className="text-black font-playfair text-xl hover:text-gray-600 transition-colors duration-300 pl-2 md:pl-4 py-3">
+        <Link href="/" className={`text-black text-xl hover:text-gray-600 transition-colors duration-300 pl-2 md:pl-4 py-3 ${playfair.className}`}>
           Windows to elsewhere
         </Link>
         {/* 桌面選單 */}
