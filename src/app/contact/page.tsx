@@ -58,7 +58,7 @@ export default function ContactLetter() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center w-full">
             <div className="h-px min-w-[24px] bg-gray-500 flex-grow"></div>
-            <span className="px-2 text-2xl font-playfair text-black text-center whitespace-nowrap">
+            <span className="px-2 text-xl font-playfair text-black text-center whitespace-nowrap">
               Write from Your Window to Mine
             </span>
             <div className="h-px min-w-[24px] bg-gray-500 flex-grow"></div>
