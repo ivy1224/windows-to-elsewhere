@@ -4,6 +4,7 @@ import { Noto_Serif_TC, Noto_Sans_TC, Playfair_Display, Inter } from 'next/font/
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 const playfair = Playfair_Display({
   weight: ['400', '500', '600', '700'],
@@ -43,7 +44,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="zh-TW" className={`${notoSans.className} ${playfair.variable} ${notoSerif.variable} ${notoSans.variable} ${inter.variable}`}>
+    <html lang="zh-TW" className={`${playfair.className} ${playfair.variable} ${notoSerif.variable} ${notoSans.variable} ${inter.variable}`}>
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet" />
       </head>
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <main className="pt-24">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
