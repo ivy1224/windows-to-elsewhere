@@ -6,7 +6,7 @@ export const posts = [
     date: '2025-08-12',
     readTime: '8分鐘',
     category: 'life-abroad',
-    image: '/blog/20250812.jpg',
+    image: '/blog/20250812.JPG',
     content: `前陣子和許久未見的朋友在社群上小聊，聊著聊著，她忽然說了句：
 
 「勇敢的人先享受世界。」
