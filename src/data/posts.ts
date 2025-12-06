@@ -2,7 +2,7 @@ export const posts = [
   {
     slug: 'good-luck',
     title: 'Good Luck',
-    excerpt: '前往新天鵝湖的火車上，坐在我對面的情侶正用有線耳機播放著英國搖滾樂團 Decade 的〈Good Luck〉，搖滾的節奏像是再也藏不住似的，女孩摘下一邊耳機，遞給身邊的另一半。',
+    excerpt: '前往新天鵝湖的火車上，坐在我對面的情侶正用有線耳機播放著英國搖滾樂團 Decade 的〈Good Luck〉，搖滾的節奏像是再也藏不住似的，女孩摘下一邊耳機，遞給身邊的另一伴。',
     date: '2025-10-20',
     readTime: '5分鐘',
     category: 'life-abroad',
